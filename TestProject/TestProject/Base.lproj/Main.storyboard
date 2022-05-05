@@ -15,14 +15,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pah-va-NrR">
+                                <rect key="frame" x="16" y="104" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ПЕРЕХОД"/>
+                                <connections>
+                                    <action selector="showSecondController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q06-AZ-90K"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pah-va-NrR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FeO-D6-SBK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pah-va-NrR" secondAttribute="trailing" constant="16" id="aMM-kD-iRc"/>
+                            <constraint firstItem="pah-va-NrR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="tw4-Yp-7oJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DCk-on-4Bg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="97.767857142857139"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ipT-bc-0xd">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="zFg-Mg-xCr" customClass="SecondViewController" customModule="TestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mgc-VU-m1y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GvG-W3-buv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfZ-Yb-ML3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1921" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qQ1-nG-lXS">
